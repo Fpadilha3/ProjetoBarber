@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - BarberPro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        💈 BarberPro
+    </div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="agendamentos.html">Agendamentos</a>
+        <a href="historico.html">Histórico</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Cadastrar Cliente</h2>
+
+        <input
+            type="text"
+            id="nomeCliente"
+            placeholder="Nome">
+
+        <input
+            type="text"
+            id="telefoneCliente"
+            placeholder="Telefone">
+
+        <input
+            type="email"
+            id="emailCliente"
+            placeholder="E-mail">
+
+        <button onclick="cadastrarCliente()">
+            Cadastrar Cliente
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Pesquisar Cliente</h2>
+
+        <input
+            type="text"
+            id="pesquisaCliente"
+            placeholder="Digite um nome"
+            onkeyup="pesquisarCliente()">
+
+    </div>
+
+    <div class="card">
+
+        <h2>Clientes Cadastrados</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="listaClientes"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
