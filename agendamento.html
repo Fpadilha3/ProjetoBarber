@@ -38,18 +38,17 @@
             id="agCliente"
             placeholder="Nome do Cliente">
 
-        <input
-            type="text"
-            id="agServico"
-            placeholder="Serviço">
+        <select id="agServico">
+            <option value="">--Selecione um serviço--</option>
+        </select>
 
         <input
             type="date"
             id="agData">
 
-        <input
-            type="time"
-            id="agHora">
+        <select id="agHora">
+            <option value="">--Selecione um horário--</option>
+        </select>
 
         <button onclick="agendar()">
             Agendar

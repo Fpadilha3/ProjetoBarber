@@ -538,6 +538,23 @@ select:focus{
 }
 
 /* ==========================
+   AGENDAMENTO - SELECT SERVIÇOS
+   Torna o texto do select de serviços mais legível
+   ========================== */
+
+#agServico,
+#agHora {
+    color:var(--black);
+    background:#ffffff;
+}
+
+#agServico option,
+#agHora option {
+    color:var(--black);
+    background:#ffffff;
+}
+
+/* ==========================
    TABELAS
    ========================== */
 
