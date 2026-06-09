@@ -83,6 +83,24 @@ function renderClientes() {
         </tr>
         `;
     });
+
+    atualizarOpcoesClientes();
+}
+
+function atualizarOpcoesClientes() {
+
+    const sel = document.getElementById("agCliente");
+    if (!sel) return;
+
+    sel.innerHTML = '<option value="">--Selecione um cliente--</option>';
+
+    clientes.forEach(cliente => {
+        sel.innerHTML += `
+            <option value="${cliente.nome}">
+                ${cliente.nome}
+            </option>
+        `;
+    });
 }
 
 function removerCliente(index) {
@@ -347,5 +365,6 @@ renderServicos();
 renderAgendamentos();
 atualizarDashboard();
 
+atualizarOpcoesClientes();
 atualizarOpcoesServicos();
 atualizarOpcoesHorarios();

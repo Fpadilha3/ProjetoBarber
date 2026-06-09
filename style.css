@@ -127,11 +127,11 @@ header{
 
 .logo img{
 
-    width:90px;
+    width:98px;
 
-    height:90px;
+    height:98px;
 
-    object-fit:contain;
+    object-fit:cover;
 
     padding:8px;
 
@@ -140,16 +140,18 @@ header{
     background:
     radial-gradient(
         circle,
-        rgba(255,215,0,.18),
-        rgba(255,215,0,.05)
+        rgba(255,215,0,.35),
+        rgba(255,255,255,.15)
     );
 
     border:
-    2px solid rgba(255,215,0,.35);
+    3px solid rgba(255,215,0,.75);
 
     box-shadow:
-    0 0 15px rgba(255,215,0,.3),
-    0 0 30px rgba(255,215,0,.15);
+    0 0 25px rgba(255,215,0,.55),
+    0 0 50px rgba(255,215,0,.3);
+
+    filter:brightness(1.15);
 
     transition:.4s;
 }
@@ -538,20 +540,28 @@ select:focus{
 }
 
 /* ==========================
-   AGENDAMENTO - SELECT SERVIÇOS
-   Torna o texto do select de serviços mais legível
+   AGENDAMENTO - SELECT CLIENTE, SERVIÇO E HORA
+   Torna o texto dos selects mais legível e uniforme
    ========================== */
 
+#agCliente,
 #agServico,
 #agHora {
-    color:var(--black);
-    background:#ffffff;
+    color:var(--white);
+    background:#2f2f2f;
+    font-weight:700;
+    letter-spacing:0.02em;
+    text-transform:capitalize;
 }
 
+#agCliente option,
 #agServico option,
 #agHora option {
-    color:var(--black);
-    background:#ffffff;
+    color:var(--white);
+    background:#2f2f2f;
+    font-weight:600;
+    letter-spacing:0.02em;
+    text-transform:capitalize;
 }
 
 /* ==========================
@@ -818,6 +828,119 @@ footer{
 
         padding:10px;
 
+    }
+
+}
+/* ==========================
+   RESPONSIVIDADE EXTRA
+   ========================== */
+
+@media (max-width: 768px){
+
+    body{
+        background-attachment: scroll;
+    }
+
+    header{
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 24px;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .hero{
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p{
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .container,
+    .dashboard,
+    .sobre{
+        width: 95%;
+    }
+
+    .card,
+    .stat-card{
+        padding: 20px;
+    }
+
+    .stat-card h2{
+        font-size: 2rem;
+    }
+
+    button,
+    .btn{
+        width: 100%;
+        padding: 15px;
+    }
+
+    input,
+    select{
+        font-size: 16px;
+    }
+
+    .logo-showcase img{
+        width: 180px;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size: 1.6rem;
+    }
+
+    .hero p{
+        font-size: 0.95rem;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    th,
+    td{
+        padding: 8px;
+        font-size: 12px;
     }
 
 }
