@@ -43,7 +43,9 @@
 
         <input
             type="date"
-            id="agData">
+            id="agData"
+            onfocus="this.showPicker()"
+            oninput="validarDataAgendamento()">
 
         <select id="agHora">
             <option value="">--Selecione um horário--</option>

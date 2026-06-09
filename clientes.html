@@ -36,17 +36,21 @@
         <input
             type="text"
             id="nomeCliente"
-            placeholder="Nome">
+            placeholder="Nome"
+            oninput="validarNomeCliente()">
 
         <input
             type="text"
             id="telefoneCliente"
-            placeholder="Telefone">
+            placeholder="(XX) 9XXXX-XXXX"
+            maxlength="15"
+            oninput="formatarTelefone(this); validarTelefoneCliente()">
 
         <input
             type="email"
             id="emailCliente"
-            placeholder="E-mail">
+            placeholder="E-mail"
+            oninput="validarEmailCliente()">
 
         <button onclick="cadastrarCliente()">
             Cadastrar Cliente

@@ -36,12 +36,14 @@
         <input
             type="text"
             id="nomeServico"
-            placeholder="Nome do serviço">
+            placeholder="Nome do serviço"
+            oninput="validarNomeServico()">
 
         <input
             type="number"
             id="valorServico"
-            placeholder="Valor">
+            placeholder="Valor"
+            oninput="validarValorServico()">
 
         <button onclick="cadastrarServico()">
             Cadastrar Serviço
