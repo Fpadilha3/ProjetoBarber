@@ -75,7 +75,7 @@ O sistema utiliza um visual premium inspirado em barbearias modernas, com:
 O projeto está hospedado utilizando o GitHub Pages e pode ser acessado diretamente pelo navegador através do link:
 
 **🔗 Link do Projeto:**
-[Adicionar link do GitHub Pages aqui]
+[https://fpadilha3.github.io/ProjetoBarber/]
 
 Não é necessária nenhuma instalação ou configuração adicional. Basta acessar o endereço acima para utilizar o sistema.
 
