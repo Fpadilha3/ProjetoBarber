@@ -2,13 +2,13 @@
 
 Integrantes: Vitor Chagas e Felipe Padilha
 
-# 💈 Barbearia Pitbulls
+# 💈 BarberGO
 
 Sistema web desenvolvido para auxiliar no gerenciamento de barbearias, permitindo o controle de clientes, serviços, agendamentos e histórico de atendimentos de forma simples e organizada.
 
 ## 📋 Sobre o Projeto
 
-A Barbearia Pitbulls é uma plataforma desenvolvida com HTML, CSS e JavaScript que tem como objetivo facilitar a rotina administrativa de uma barbearia.
+A BarberGO é uma plataforma desenvolvida com HTML, CSS e JavaScript que tem como objetivo facilitar a rotina administrativa de uma barbearia.
 
 O sistema permite cadastrar clientes, registrar serviços, realizar agendamentos e acompanhar o histórico de atendimentos através de uma interface moderna e intuitiva.
 
