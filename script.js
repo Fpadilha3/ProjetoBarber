@@ -1,4 +1,4 @@
-let clientes =
+ let clientes =
 JSON.parse(localStorage.getItem("clientes")) || [];
 
 let servicos =
